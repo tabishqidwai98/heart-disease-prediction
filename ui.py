@@ -58,7 +58,9 @@ While heart disease can be deadly, it's also preventable in most people. By adop
 if ch == 'View Data':
     st.image("2.png")
     st.subheader('View dataset of patients')
+    st.spinner('Dataset is loading')
     df = pd.read_csv('heart.csv')
+    st.success('Dataset loaded successfully')
     attr_ck = st.sidebar.checkbox('view column info')
     st.write(df)
     if attr_ck:
@@ -128,6 +130,7 @@ if ch =='Predict Disease':
     st.image('4.jpg')
    
     st.sidebar.image('model_report.png',use_column_width=True,caption="our model performance")
+    st.success('Model loaded successfully')
     st.subheader("Enter patient details")
     patient_name = st.text_input('Enter patient name')
     age = st.number_input("Age",min_value=1,max_value=100,value=30)
