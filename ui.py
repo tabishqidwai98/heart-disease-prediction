@@ -20,7 +20,7 @@ st.sidebar.title("HEART DISEASE PREDICTION")
 ch = st.sidebar.selectbox("choose an option",menu)
 if ch == 'About Project':
     st.header("About this project")
-    st.image('1.jpg')
+    st.image('A.jpg')
     st.subheader("What is heart disease?")
     st.markdown("The term “heart disease” refers to several types of heart conditions. The most common type of heart disease in the United States is coronary artery disease (CAD), which affects the blood flow to the heart. Decreased blood flow can cause a heart attack.")
     
@@ -56,11 +56,9 @@ While heart disease can be deadly, it's also preventable in most people. By adop
     st.write(" - There is sidebar on the left side of the web page where in dropdown, u can select different feature options to view and use. On the top right corner, there is a 3 dot button for changing the settings.")
 
 if ch == 'View Data':
-    st.image("2.png")
+    st.image("B.png")
     st.subheader('View dataset of patients')
-    st.spinner('Dataset is loading')
     df = pd.read_csv('heart.csv')
-    st.success('Dataset loaded successfully')
     attr_ck = st.sidebar.checkbox('view column info')
     st.write(df)
     if attr_ck:
@@ -127,10 +125,9 @@ if ch == 'View Visualization':
 
 if ch =='Predict Disease':
 
-    st.image('4.jpg')
-   
+    st.image('D.jpg')
+    
     st.sidebar.image('model_report.png',use_column_width=True,caption="our model performance")
-    st.success('Model loaded successfully')
     st.subheader("Enter patient details")
     patient_name = st.text_input('Enter patient name')
     age = st.number_input("Age",min_value=1,max_value=100,value=30)
@@ -171,9 +168,9 @@ if ch =='Predict Disease':
             sess.commit()
             sess.close()
             if result:
-                st.sidebar.success(f"AI prediction : Patient:{patient_name} seem to be healthy")
+                st.success(f"AI prediction : Patient:{patient_name} seem to be healthy")
             else:
-                st.sidebar.error(f"AI prediction : Patient:{patient_name} might be suffering from heart disease")
+                st.error(f"AI prediction : Patient:{patient_name} might be suffering from heart disease")
             
 
 if ch =='Previous Predictions':
