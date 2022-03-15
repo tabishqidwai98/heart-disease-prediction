@@ -8,10 +8,10 @@ Complete attribute documentation:
 7. relrest (1 = relieved after rest; 0 = otherwise)
 8. pncaden (sum of 5, 6, and 7)
 9. cp: chest pain type
--- Value 1: typical angina
--- Value 2: atypical angina
--- Value 3: non-anginal pain
--- Value 4: asymptomatic
+    - Value 1: typical angina
+    - Value 2: atypical angina
+    - Value 3: non-anginal pain
+    - Value 4: asymptomatic
 10. trestbps: resting blood pressure (in mm Hg on admission to the hospital)
 11. htn
 12. chol: serum cholestoral in mg/dl
@@ -22,9 +22,9 @@ Complete attribute documentation:
 17. dm (1 = history of diabetes; 0 = no such history)
 18. famhist: family history of coronary artery disease (1 = yes; 0 = no)
 19. restecg: resting electrocardiographic results
--- Value 0: normal
--- Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
--- Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria
+- Value 0: normal
+- Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+- Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria
 20. ekgmo (month of exercise ECG reading)
 21. ekgday(day of exercise ECG reading)
 22. ekgyr (year of exercise ECG reading)
@@ -34,18 +34,18 @@ Complete attribute documentation:
 26. pro (calcium channel blocker used during exercise ECG: 1 = yes; 0 = no)
 27. diuretic (diuretic used used during exercise ECG: 1 = yes; 0 = no)
 28. proto: exercise protocol
-1 = Bruce
-2 = Kottus
-3 = McHenry
-4 = fast Balke
-5 = Balke
-6 = Noughton
-7 = bike 150 kpa min/min (Not sure if "kpa min/min" is what was written!)
-8 = bike 125 kpa min/min
-9 = bike 100 kpa min/min
-10 = bike 75 kpa min/min
-11 = bike 50 kpa min/min
-12 = arm ergometer
+- 1 = Bruce
+- 2 = Kottus
+- 3 = McHenry
+- 4 = fast Balke
+- 5 = Balke
+- 6 = Noughton
+- 7 = bike 150 kpa min/min (Not sure if "kpa min/min" is what was written!)
+- 8 = bike 125 kpa min/min
+- 9 = bike 100 kpa min/min
+- 10 = bike 75 kpa min/min
+- 11 = bike 50 kpa min/min
+- 12 = arm ergometer
 29. thaldur: duration of exercise test in minutes
 30. thaltime: time when ST measure depression was noted
 31. met: mets achieved
@@ -59,9 +59,9 @@ Complete attribute documentation:
 39. xhypo: (1 = yes; 0 = no)
 40. oldpeak = ST depression induced by exercise relative to rest
 41. slope: the slope of the peak exercise ST segment
--- Value 1: upsloping
--- Value 2: flat
--- Value 3: downsloping
+- Value 1: upsloping
+- Value 2: flat
+- Value 3: downsloping
 42. rldv5: height at rest
 43. rldv5e: height at peak exercise
 44. ca: number of major vessels (0-3) colored by flourosopy
@@ -69,10 +69,10 @@ Complete attribute documentation:
 46. exerckm: irrelevant
 47. restef: rest raidonuclid (sp?) ejection fraction
 48. restwm: rest wall (sp?) motion abnormality
-0 = none
-1 = mild or moderate
-2 = moderate or severe
-3 = akinesis or dyskmem (sp?)
+- 0 = none
+- 1 = mild or moderate
+- 2 = moderate or severe
+- 3 = akinesis or dyskmem (sp?)
 49. exeref: exercise radinalid (sp?) ejection fraction
 50. exerwm: exercise wall (sp?) motion
 51. thal: 3 = normal; 6 = fixed defect; 7 = reversable defect
@@ -83,9 +83,9 @@ Complete attribute documentation:
 56. cday: day of cardiac cath (sp?)
 57. cyr: year of cardiac cath (sp?)
 58. num: diagnosis of heart disease (angiographic disease status)
--- Value 0: < 50% diameter narrowing
--- Value 1: > 50% diameter narrowing
-(in any major vessel: attributes 59 through 68 are vessels)
+- Value 0: < 50% diameter narrowing
+- Value 1: > 50% diameter narrowing
+> (in any major vessel: attributes 59 through 68 are vessels)
 59. lmt
 60. ladprox
 61. laddist

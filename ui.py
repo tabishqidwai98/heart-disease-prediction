@@ -52,11 +52,10 @@ While heart disease can be deadly, it's also preventable in most people. By adop
     """)
 
     st.header("Our Approach")
-    st.write("We are trying to predict heart disease based on the medical test and history of the patients. We have obtained an accuracy of 86.8%. There is a analysis section of the project for better understanding of the data. we can viewing previous patients data too. The predict page of this web app is used to predict if the patient will have heart disease in future.")
+    st.write("We are trying to predict heart disease based on the medical test and history of the patients. We have obtained an accuracy of 86.8%. There is a analysis section of the project for better understanding of the data. We can also view previous patients data too. The 'predict disease' page of this web app is used to predict if the patient will have heart disease in future.")
     st.write(" - There is sidebar on the left side of the web page where in dropdown, u can select different feature options to view and use. On the top right corner, there is a 3 dot button for changing the settings.")
 
 if ch == 'View Data':
-    st.image("B.png")
     st.subheader('View dataset of patients')
     df = pd.read_csv('heart.csv')
     attr_ck = st.sidebar.checkbox('view column info')
