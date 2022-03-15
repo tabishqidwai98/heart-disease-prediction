@@ -1,4 +1,4 @@
--clone repository
+- clone repository
 ```bash
 git clone <your app repo link>
 ```
