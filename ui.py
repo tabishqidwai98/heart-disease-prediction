@@ -66,7 +66,6 @@ if ch == 'View Data':
 if ch == 'View Visualization':
     df = pd.read_csv('heart.csv')
     goptions = ['patient distribution count',
-                'patient with chest pain',
                 'age wise distribution of heart patients',
                 'gender wise division of heart patients',
                 'patients with heart rate slope',
@@ -79,12 +78,6 @@ if ch == 'View Visualization':
     if submenu == 'patient distribution count':
         fig,ax =plt.subplots()
         sns.countplot(df.target,ax=ax)
-        st.pyplot(fig)
-    if submenu == 'patinets with chest pain':
-        fig,ax =plt.subplots()
-        sns.countplot(df.cp,ax=ax)
-        ax.set_xticks([0,1,2,3])
-        ax.set_xticklabels([' typical angina','atypical angina','non-anginal pain','asymptomatic'])
         st.pyplot(fig)
     if submenu == 'age wise distribution of heart patients':
         fig,ax= plt.subplots(figsize=(15,8))
